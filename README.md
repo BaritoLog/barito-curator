@@ -10,6 +10,6 @@ An ElasticSearch Curator for maintain Barito Log Retention.
 
 ## ENV variables
 ```
-BARITO_API_URL            - Barito Market API Url, ex: https://barito-log.domain/api/profile_for_es_curator
+BARITO_API_URL            - Barito Market API Url, ex: https://barito-log.domain/api/profile_curator
 BARITO_API_CLIENT_KEY     - Barito Market API Client Key, ex: abcd1234
 ```
