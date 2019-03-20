@@ -50,7 +50,7 @@ def main():
 
             if index_list.indices:
                 logger.info('Delete %d indices' % len(index_list.indices))
-                curator.DeleteIndices(index_list).do_action()
+                curator.DeleteIndices(index_list, 300).do_action()
             pass
     pass
 
