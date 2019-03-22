@@ -13,7 +13,7 @@ def connect_elasticsearch(cluster):
     hostname = cluster["hostname"]
     logger.info('Connecting to %s %s' % (hostname, ipaddress))
     try:
-        client = elasticsearch.Elasticsearch(ipaddress)
+        client = elasticsearch.Elasticsearch(ipaddress, timeout=30)
         connected = client.ping()
         if not connected:
             logger.error('Connection to %s %s failed' % (hostname, ipaddress))
