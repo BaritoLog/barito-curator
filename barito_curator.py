@@ -49,8 +49,11 @@ def main():
                 pass
 
             if index_list.indices:
-                logger.info('Delete %d indices' % len(index_list.indices))
-                curator.DeleteIndices(index_list, 300).do_action()
+                try:
+                    logger.info('Delete %d indices' % len(index_list.indices))
+                    curator.DeleteIndices(index_list, 3600).do_action()
+                except Exception as ex:
+                    pass
             pass
     pass
 
