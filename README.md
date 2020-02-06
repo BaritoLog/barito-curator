@@ -6,7 +6,7 @@ An ElasticSearch Curator for maintain Barito Log Retention.
 - Install python 3.x
 - pip install -r requirements.txt
 - Set ENV variables, see below
-- python barito_curator.py
+- python3 barito_curator.py
 
 ## ENV variables
 ```
